@@ -31,9 +31,9 @@ function startGame() {
     } else if (move.value == scissors && computer == paper) {
         compChoice.textContent = 'computer has chosen: ' + computer;
         userWin.textContent = 'user wins!';
-    } else if (move.value == rock && computer == rock || move.value == paper
-         && computer == paper || move.value == scissors && computer
-          == scissors) {
+    } else if (move.value == rock && computer == rock || 
+        move.value == paper && computer == paper || 
+        move.value == scissors && computer == scissors) {
         compChoice.textContent = 'computer has chosen: ' + computer;
         stalemate.textContent = 'stalemate. choose again...';
     } else {
