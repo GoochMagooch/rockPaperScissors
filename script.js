@@ -11,7 +11,7 @@ const scissors = 'scissors';
 const index = Math.floor(Math.random() * 3);
 const choices = [rock, paper, scissors];
 
-function game() {
+function startGame() {
     const computer = choices[index];
     if (move.value == rock && computer == paper) {
         compChoice.textContent = 'computer has chosen: ' + computer;
@@ -39,4 +39,4 @@ function game() {
     }
 }
 
-button.addEventListener('click', game);
+button.addEventListener('click', startGame);
